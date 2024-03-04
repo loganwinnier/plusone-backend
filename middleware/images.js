@@ -79,6 +79,7 @@ async function deleteImages(images) {
  * updates res.locals.images to array of image s3 keys.
  */
 async function uploadImages(req, res, next) {
+    console.log("IMAGES")
     const files = res.locals.images;
 
     if ((res.locals.user.profile?.images?.length || 0) - (

@@ -11,6 +11,7 @@ const { GEOCODING_KEY } = require('../config');
  * Appends geoLocation, state and city onto res.locals.location.
  */
 async function geoCode(req, res, next) {
+    console.log("GEO CODE")
     const formData = res.locals.formData;
 
     if (req.method === "PATCH"
