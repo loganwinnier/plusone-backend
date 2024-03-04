@@ -10,7 +10,7 @@ const GEOCODING_KEY = process.env.GEOCODING_KEY;
 const AWS_S3_ACCESS_KEY = process.env.AWS_S3_KEY;
 const AWS_S3_SECRET_KEY = process.env.AWS_S3_SECRET_KEY;
 const BUCKET_NAME = process.env.BUCKET_NAME;
-const JWTOPTIONS = { expiresIn: '1d' };
+const JWTOPTIONS = { expiresIn: '4d' };
 
 const PORT = +process.env.PORT || 3001;
 
