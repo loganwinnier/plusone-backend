@@ -33,7 +33,14 @@ if (process.env.NODE_ENV !== "test") {
     console.log(`
 ${ "PlusOne Config:".green }
 ${ "NODE_ENV:".yellow }           ${ process.env.NODE_ENV }
-${ "SECRET_KEY:".yellow }         ${ SECRET_KEY }
+${ "SECRET_KEY:".blue }         ${ SECRET_KEY }
+${ "GEOCODING_KEY:".blue }         ${ GEOCODING_KEY }
+${ "AWS_S3_ACCESS_KEY:".blue }         ${ AWS_S3_ACCESS_KEY }
+${ "AWS_S3_SECRET_KEY:".blue }         ${ AWS_S3_SECRET_KEY }
+
+
+${ "Token expiration Length:".yellow }         ${ JWTOPTIONS.expiresIn }
+${ "AWS BUCKET:".yellow }         ${ BUCKET_NAME }
 ${ "PORT:".yellow }               ${ PORT }
 ${ "BCRYPT_WORK_FACTOR:".yellow } ${ BCRYPT_WORK_FACTOR }
 ${ "Database:".yellow }           ${ getDatabaseUri() }
