@@ -7,8 +7,10 @@ const fs = require('fs');
 
 const s3 = new AWS.S3Client({
     region: "us-east-1",
-    secretAccessKey: AWS_S3_SECRET_KEY,
-    accessKeyId: AWS_S3_ACCESS_KEY,
+    credentials : {
+        secretAccessKey: AWS_S3_SECRET_KEY,
+        accessKeyId: AWS_S3_ACCESS_KEY,
+    }
 });
 
 class Bucket {
